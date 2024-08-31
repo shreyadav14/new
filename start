@@ -1,2 +1,28 @@
 #include<stdio.h>
-typedef struct link{
+#include<stdlib.h>
+typedef struct node{
+    int data;
+    struct node *next;
+}node;
+
+int main(){
+    node*head;
+    node*second;
+    node*third;
+    head=(node*)malloc(sizeof(node));
+    second=(node*)malloc(sizeof(node));
+    third=(node*)malloc(sizeof(node));
+    
+    head->next=second;
+    head->data=66;
+
+    second->next=third;
+    second->data=67;
+
+    third->next=NULL;
+    third->data=68;
+
+
+    return 0;
+    }
+
