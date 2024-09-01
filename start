@@ -22,6 +22,7 @@ int main(){
     third->next=NULL;
     third->data=68;
 
+printf("Done changes");
 
     return 0;
     }
