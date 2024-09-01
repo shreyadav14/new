@@ -6,15 +6,15 @@ typedef struct node{
 }node;
 
 int main(){
-    node*first;
+    node*head;
     node*second;
     node*third;
-    first=(node*)malloc(sizeof(node));
+    head=(node*)malloc(sizeof(node));
     second=(node*)malloc(sizeof(node));
     third=(node*)malloc(sizeof(node));
     
-    first->next=second;
-    first->data=66;
+    head->next=second;
+    head->data=66;
 
     second->next=third;
     second->data=67;
